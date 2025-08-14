@@ -1,0 +1,177 @@
+
+:root{
+  --brand:#F5E79B;
+  --accent:#f0b400;
+  --dark:#333;
+  --muted:#666;
+  --bg:#fffdf3;
+  --radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--dark); background:var(--bg);
+}
+.container{max-width:1200px; margin:0 auto; padding:0 16px}
+header{
+  position:sticky; top:0; z-index:1000;
+  background:var(--brand); box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+.header-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0;}
+.brand{display:flex; align-items:center; gap:10px; font-weight:800; font-size:20px}
+.brand img{height:40px; width:40px; object-fit:contain}
+.brand img {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+}
+nav a{
+  text-decoration:none; color:var(--dark); font-weight:700; margin-left:20px; padding:8px 10px; border-radius:10px;
+}
+nav a:hover, nav a.active{background:#fff; box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.header-actions{display:flex; align-items:center; gap:10px}
+.icon-btn{background:#fff; border:0; border-radius:999px; padding:8px 12px; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,.08)}
+#cart-count{font-weight:800}
+
+.hero{
+  position:relative; overflow:hidden; border-radius:var(--radius); margin:16px auto;
+}
+.banner{height:360px; display:flex; align-items:center; justify-content:center; color:#fff; text-align:center; background:#222; background-size:cover; background-position:center; border-radius:var(--radius)}
+.banner .overlay{position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.35))}
+.banner .content{position:relative; z-index:1}
+.banner h1{font-size:36px; margin:0 0 8px}
+.banner p{font-size:18px; margin:0 0 16px}
+.banner .cta{background:var(--accent); border:0; padding:12px 18px; border-radius:12px; font-weight:800; cursor:pointer}
+
+.section{padding:24px 0}
+.section h2{margin:0 0 10px}
+.kategori{display:flex; gap:12px; flex-wrap:wrap}
+.kategori a{background:#fff; border:1px solid #eee; padding:10px 14px; border-radius:999px; text-decoration:none; color:var(--dark)}
+.grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:16px}
+.card{
+  background:#fff; border:1px solid #eee; border-radius:var(--radius); overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,.06);
+  display:flex; flex-direction:column;
+}
+.section h2 {
+  text-align: center;
+}
+
+/* Kartu media sosial lebih kecil */
+.section .grid .card {
+  max-width: 220px;
+  font-size: 0.85em;
+  margin: 0 auto;
+}
+
+.section .grid .card img {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto 8px auto;
+}
+
+.section .grid {
+  justify-content: center;
+  gap: 16px;
+}
+.social-section .card {
+  max-width: 180px;
+  font-size: 0.78em;
+  margin: 0 auto;
+}
+
+.social-section .card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 6px;
+}
+
+/* Card rekomendasi tetap besar */
+#rekomendasi .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.social-section .card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 6px;
+  object-fit: contain;
+}
+.card img{width:100%; height:180px; object-fit:cover}
+.card .body{padding:12px; display:flex; flex-direction:column; gap:8px}
+.price{font-weight:800}
+.muted{color:var(--muted); font-size:14px}
+.btn{background:var(--accent); border:0; padding:10px 12px; border-radius:10px; font-weight:800; cursor:pointer}
+.btn.secondary{background:#222; color:#fff}
+.btn.ghost{background:transparent; border:1px solid #ddd}
+
+.product-page{display:grid; grid-template-columns: 1.2fr 1fr; gap:24px}
+.gallery{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+.gallery img{width:100%; border-radius:12px; height:200px; object-fit:cover}
+.product-info .row{margin-bottom:12px}
+.badge{display:inline-block; background:#fff6d1; border:1px solid #ffe38a; padding:4px 8px; border-radius:999px; font-size:12px; margin-right:6px}
+
+.review{background:#fff; border:1px solid #eee; border-radius:12px; padding:12px; margin-bottom:10px}
+
+.table{width:100%; border-collapse:collapse; background:#fff; border-radius:12px; overflow:hidden}
+.table th, .table td{padding:12px; border-bottom:1px solid #f1f1f1; text-align:left}
+.table tfoot td{font-weight:800}
+
+footer{margin-top:40px; background:var(--brand);}
+.footer-inner{padding:22px 0; text-align:center}
+
+.form{max-width:420px; margin:20px auto; background:#fff; padding:18px; border:1px solid #eee; border-radius:16px}
+.form h1{margin-top:0}
+.input{display:flex; flex-direction:column; gap:6px; margin-bottom:12px}
+.input input, .input select, .input textarea{padding:12px 10px; border-radius:10px; border:1px solid #ddd; width:100%}
+.error{color:#c00; font-size:14px; margin-top:-6px; margin-bottom:10px}
+.alt-login{display:flex; gap:10px}
+.alt-login .btn{flex:1}
+.gallery-wide{display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:10px}
+
+.social-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;                 
+}
+
+.social-btn img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+
+}
+
+.product-card .product-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  display: block;
+}
+
+.product-card .info-row {
+  display: flex;
+  gap: 16px;
+  font-size: 0.95em;
+  margin: 6px 0 8px 0;
+  color: #555;
+}
+
+.product-card .stok {
+  background: #eaf7ea;
+  color: #2e7d32;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+
+.product-card .sold {
+  background: #fff3e0;
+  color: #f57c00;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keranjang • Madu Sehat Arrasyid</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <div class="brand"><img src="logo.png" alt="Logo"/><span>Madu Sehat Arrasyid</span></div>
+    
+      <nav>
+        <a href="index.html" >Home</a>
+        <a href="products.html" >Produk</a>
+        <a href="about.html" >Tentang Kami</a>
+        <a href="login.html" >Login</a>
+      </nav>
+    
+    <div class="header-actions">
+      <a class="icon-btn" href="cart.html">🛒 Keranjang (<span id="cart-count">0</span>)</a>
+    </div>
+  </div>
+</header>
+<main class="container">
+<section class="section">
+  <h1>Keranjang Belanja</h1>
+  <p class="muted">Simpan untuk nanti atau lanjutkan ke checkout.</p>
+</section>
+<section class="section">
+  <table class="table">
+    <thead>
+      <tr><th>Produk</th><th>Harga</th><th>Kuantitas</th><th>Total</th><th>Aksi</th></tr>
+    </thead>
+    <tbody id="cart-body"></tbody>
+    <tfoot>
+      <tr><td colspan="3">Subtotal</td><td id="subtotal">Rp0</td><td></td></tr>
+    </tfoot>
+  </table>
+  <div style="display:flex; gap:10px; margin-top:14px">
+    <a class="btn ghost" href="products.html">Belanja Lagi</a>
+    <a class="btn" href="#" onclick="alert('Checkout demo: silakan lanjutkan pembayaran di marketplace kami.'); return false;">Checkout</a>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="container footer-inner">© 2025 Madu Sehat Arrasyid • Ikuti kami di <a href="https://www.instagram.com/madusehatarrasyid99/" target="_blank">Instagram</a></div>
+</footer>
+</body></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login • Madu Sehat Arrasyid</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <div class="brand"><img src="logo.png" alt="Logo"/><span>Madu Sehat Arrasyid</span></div>
+    
+      <nav>
+        <a href="index.html" >Home</a>
+        <a href="products.html" >Produk</a>
+        <a href="about.html" >Tentang Kami</a>
+        <a href="login.html" class="active">Login</a>
+      </nav>
+    
+    <div class="header-actions">
+      <a class="icon-btn" href="cart.html">🛒 Keranjang (<span id="cart-count">0</span>)</a>
+    </div>
+  </div>
+</header>
+<main class="container">
+<section class="form">
+  <h1>Login</h1>
+  <form onsubmit="handleLogin(event)">
+    <div class="input">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="nama@email.com" required>
+    </div>
+    <div class="input">
+      <label for="password">Kata Sandi</label>
+      <input id="password" type="password" placeholder="••••••" required>
+    </div>
+    <div id="login-error" class="error"></div>
+    <button class="btn" type="submit">Login</button>
+  </form>
+  <div style="height:10px"></div>
+  <div class="alt-login">
+    <div class="social-login">
+  <button class="social-btn">
+    <img src="google.png" alt="Google">
+  </button>
+  <button class="social-btn">
+    <img src="facebook.png" alt="Facebook">
+  </button>
+</div>
+  </div>
+  <div style="margin-top:10px; display:flex; justify-content:space-between">
+    <a href="#" onclick="alert('Reset password (demo)')">Lupa kata sandi?</a>
+    <a href="#" onclick="alert('Registrasi (demo)')">Daftar akun baru</a>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="container footer-inner">© 2025 Madu Sehat Arrasyid • Ikuti kami di <a href="https://www.instagram.com/madusehatarrasyid99/" target="_blank">Instagram</a></div>
+</footer>
+</body></html>
